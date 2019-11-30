@@ -1,0 +1,36 @@
+<html>
+<body>
+  <div class="glitter">
+  <p>Hey diskha..Happy Birthday baby</p>
+</div>
+<style>
+.glitter{
+  width: 100%;
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #000, #FFF, #000);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    font-size: 2em;
+    animation: shine 5s linear infinite;
+    -webkit-text-fill-color: rgba(255,255,255,0.1);
+    -webkit-background-clip:text;
+}
+@keyframes shine{
+  0%{
+    background-position: -200%;
+  }
+  100%{
+    background-position: 200%;
+  }
+}
+</style>
+</body>
+</html>

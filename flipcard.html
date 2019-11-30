@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: lightblue;
+}
+.flipcardholder{
+  background-color: transparent;
+  width:250px;
+  height:250px;
+  position: relative;
+}
+.flipcardinner{
+  transition: 0.5s linear;
+  width:100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.cardfront, .cardback{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  text-align: center;
+  backface-visibility: hidden;
+}
+.cardfront{
+  background-color: green;
+  color:#fff;
+}
+.cardback{
+  transform: rotateY(180deg);
+  background-color: black;
+  opacity: 0.6;
+  color:#fff;
+}
+.flipcardholder:hover .flipcardinner{
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<div class="flipcardholder">
+  <div class="flipcardinner">
+    <div class="cardfront">
+      hey here this is front!
+    </div>
+    <div class="cardback">
+        Hurrah! It got flipped.
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
